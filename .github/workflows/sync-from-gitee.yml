@@ -1,0 +1,35 @@
+name: Sync from Gitee
+
+on:
+  # 定时触发：每 6 小时同步一次（UTC 时间）
+  schedule:
+    - cron: "0 */6 * * *"
+  # 手动触发
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout GitHub repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Add Gitee remote and fetch
+        run: |
+          git remote add gitee https://gitee.com/linyuan824/react_router.git
+          git fetch gitee
+
+      - name: Merge Gitee changes into GitHub
+        run: |
+          # 假设主分支是 main，如果是 master 请替换
+          git checkout main
+          git merge --no-edit gitee/main || echo "No new changes or merge conflict"
+          git push origin main
