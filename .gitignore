@@ -1,6 +1,18 @@
+# <!-- folders -->
+
 .husky/_
 .react-router
 build
 node_modules
 
+# <!-- files -->
+
 .DS_Store
+*.pem
+
+.env.local*
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*

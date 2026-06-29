@@ -1,0 +1,8 @@
+{
+  "*.{md,json}": ["npm run format"],
+  "*.js?(x)": ["npm run format"],
+  "*.ts?(x)": ["npm run format"],
+  "*.{css,less,scss,sass}": ["npm run format"],
+  "*.vue": ["npm run format"],
+  "*": []
+}

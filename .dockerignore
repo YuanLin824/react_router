@@ -1,12 +1,27 @@
+<!-- folders -->
+
+.claude
+.codegraph
+.git
 .husky
+.idea
 .react-router
+.vscode
 build
 node_modules
 
+<!-- files -->
+
 .editorconfig
+.gitignore
+.lintstagedrc
+.npmrc
 .prettierignore
 .prettierrc
+.prettierrc.cjs
+CLAUDE.md
 commitlint.config.cjs
 eslint.config.mjs
 LICENSE
 README.md
+rest-client.http
