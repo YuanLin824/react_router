@@ -4,18 +4,18 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## 常用命令
 
-| 命令 | 说明 |
-|------|------|
-| `npm run dev` | 启动开发服务器 |
-| `npm run build` | 生产构建 |
-| `npm run start` | 运行生产构建产物 (`react-router-serve`) |
-| `npm run typecheck` | 生成类型定义 + TypeScript 类型检查 |
-| `npm run lint` | 全量 ESLint 检查 |
-| `npm run lint:app` | 仅检查 `./app` 目录 |
-| `npm run format` | 全量 Prettier 格式化 |
-| `npm run format:app` | 仅格式化 `./app` 目录 |
-| `npm run docker` | 使用 `.env.development` 启动 Docker Compose (PostgreSQL + Redis) |
-| `npm run commit` | 交互式提交 (czg) |
+| 命令                 | 说明                                                             |
+| -------------------- | ---------------------------------------------------------------- |
+| `npm run dev`        | 启动开发服务器                                                   |
+| `npm run build`      | 生产构建                                                         |
+| `npm run start`      | 运行生产构建产物 (`react-router-serve`)                          |
+| `npm run typecheck`  | 生成类型定义 + TypeScript 类型检查                               |
+| `npm run lint`       | 全量 ESLint 检查                                                 |
+| `npm run lint:app`   | 仅检查 `./app` 目录                                              |
+| `npm run format`     | 全量 Prettier 格式化                                             |
+| `npm run format:app` | 仅格式化 `./app` 目录                                            |
+| `npm run docker`     | 使用 `.env.development` 启动 Docker Compose (PostgreSQL + Redis) |
+| `npm run commit`     | 交互式提交 (czg)                                                 |
 
 ## 技术栈
 

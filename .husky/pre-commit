@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 
 # 格式化代码
-npm run lint-staged
+npm run format
